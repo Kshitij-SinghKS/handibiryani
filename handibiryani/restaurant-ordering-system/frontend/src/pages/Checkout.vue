@@ -4,7 +4,7 @@
             <form id="checkoutForm" @submit="handleSubmit" novalidate autocomplete="off">
                 <div class="checkout-heading">
                     <h3>Few more step to place your order<span>Total</span></h3>
-                    <h3 v-if="user">{{ user.user_name }}'s Order<span>${{ calculateSummaryPrice()[3] }}</span></h3>
+                    <h3 v-if="user">{{ user.user_name }}'s Order<span>₹{{ calculateSummaryPrice()[3] }}</span></h3>
                 </div>
 
                 <div class="form-group details-group">
@@ -27,7 +27,7 @@
                     <div class="form-group">
                         <div class="form-group">
                             <input type="radio" name="payment" value="cash" id="paymentCash"
-                                v-model="checkoutObj.paymentMethod" /><span>Cash</span>
+                                v-model="checkoutObj.paymentMethod" /><span>Cash/UPI to Delivery Partner</span>
                             
                         </div>
                         <p class="error-mess" v-if="errorObj.payErr.length > 0">{{ errorObj.payErr[0] }}</p>
