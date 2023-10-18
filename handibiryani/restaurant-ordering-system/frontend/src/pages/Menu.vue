@@ -15,26 +15,7 @@
                     <p @click="displayFilterDrop">Filter<span v-if="showDropDown">x</span><span v-else>v</span></p>
                 </div>
 
-                <div class="row filter-heading">
-                    <h1>Status</h1>
-                </div>
-
-                <div class="row filter-section">
-                    <ul class="filter-option">
-                        <li>
-                            <input type="button" name="cbStatus" id="bsStatus" value="Best Seller" hidden
-                                @click="filterStatusBtn($event)" />
-                            <label for="bsStatus" class="d-flex justify-content-between">Best Seller
-                                <button class="unselect-btn" @click="unselectStatusBtn($event)"
-                                    value="Best Seller">X</button></label>
-                        </li>
-
-
-                       
-
-                    </ul>
-                    <hr />
-                </div>
+                
 
                 <div class="row filter-heading">
                     <h1>Price</h1>
@@ -97,8 +78,7 @@
             <div class="col-sm-8">
                 <div class="row">
                     <div class="menu-tabs">
-                        <input type="button" id="allFilterFoodBtn" name="allFilterFoodBtn" value="All"
-                            class="menu-tab-item" @click="filterFoodBtn($event)" />
+                        
                         <input type="button" id="tacoFilterFoodBtn" name="tacoFilterFoodBtn" class="menu-tab-item"
                             value="Paneer" @click="filterFoodBtn($event)" />
                         <input type="button" id="burritoFilterFoodBtn" name="burritoFilterFoodBtn" class="menu-tab-item"
@@ -113,6 +93,8 @@
                             value="Paratha" @click="filterFoodBtn($event)" />
                             <input type="button" id="drinkFilterFoodBtn" name="drinkFilterFoodBtn" class="menu-tab-item"
                             value="Dal" @click="filterFoodBtn($event)" />
+                            <input type="button" id="drinkFilterFoodBtn" name="drinkFilterFoodBtn" class="menu-tab-item"
+                            value="Rice" @click="filterFoodBtn($event)" />
                             
                     </div>
                 </div>

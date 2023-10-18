@@ -19,10 +19,7 @@
         <div class="thank-letter">
             <p v-none>Thank you for giving us your trust!</p>
             <p v-none>
-                We have just confirmed you received your order, and hope you are enjoying it.
-                Every
-                item is handmade by our team, with care to the details, so we can always provide you with the best
-                experience.
+                Please Share Screenshot Of your Order Details to 8092153918 through Whatsapp
             </p>
             <router-link class="btn" to="/menu">Continue Shopping</router-link>
         </div>
