@@ -51,12 +51,12 @@
                                         </div>
 
                                         <div class="item-price col-sm-1">
-                                            <span class="sale-price">${{ parseFloat(f.food_price) -
+                                            <span class="sale-price">₹{{ parseFloat(f.food_price) -
                                                     parseFloat(f.food_discount)
                                             }}</span>
                                             <p class="text-muted first-price"
                                                 v-if="parseFloat(f.food_discount) != 0.00">
-                                                ${{
+                                                ₹{{
                                                         parseFloat(f.food_price)
                                                 }}
 
@@ -72,7 +72,7 @@
                                         </div>
 
                                         <div class="cal-total col-sm-2">
-                                            <h4 class="item-total">${{
+                                            <h4 class="item-total">₹{{
                                                     calculateItemPrice(index)
                                             }}
                                             </h4>

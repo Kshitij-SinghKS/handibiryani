@@ -133,7 +133,7 @@ export default {
         calculateSummaryPrice: function () {
             let subtotal = 0;
             let discount = 0;
-            let delivery = 25;
+            let delivery = 15;
             let i = 0;
             while (i < this.itemQuantity.length) {
                 subtotal = subtotal + parseInt(this.filterFoods[i].food_price) * this.itemQuantity[i]
@@ -190,7 +190,7 @@ export default {
             else {
               
                 if (this.checkoutObj.phone.length != 10) {
-                    this.errorObj.phoneErr.push('Phone numbers must have exactly 11 digits');
+                    this.errorObj.phoneErr.push('Phone numbers must have exactly 10 digits');
                 }
 
                 if (!/[0-9]{10}/.test(this.checkoutObj.phone)) {
